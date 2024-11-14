@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class DivisibilityChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int number;
+
+
+        if (scanner.hasNextInt()) {
+            number = scanner.nextInt();
+
+            if (number % 3 == 0) {
+                System.out.println(number + " делится на 3.");
+            } else {
+                System.out.println(number + " не делится на 3.");
+            }
+
+
+            if (number % 5 == 0) {
+                System.out.println(number + " делится на 5.");
+            } else {
+                System.out.println(number + " не делится на 5.");
+            }
+
+            if (number % 7 == 0) {
+                System.out.println(number + " делится на 7.");
+            } else {
+                System.out.println(number + " не делится на 7.");
+            }
+        } else {
+            System.out.println("Пожалуйста, введите корректное число.");
+        }
+
+        scanner.close();
+    }
+}
